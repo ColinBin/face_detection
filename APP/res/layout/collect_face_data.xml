@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     >
+   
+    <RelativeLayout
+        android:id="@+id/buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        >
+
+        <TableLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       	android:layout_centerHorizontal="true"
+        >
+            
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                
+                 
+                >
+                <Button 
+	   	 		android:id="@+id/get_photo"
+        		android:layout_height="wrap_content"
+        		android:layout_weight="1"
+	    		android:text="获取照片"
+	    		android:background="@drawable/shape"
+	    		android:textStyle="bold"
+	    		android:layout_marginLeft="10sp"
+	    		android:layout_marginRight="5sp"
+	    		android:layout_marginTop="5sp"
+	    		android:layout_marginBottom="10sp"
+	    		/>
+         		<Button 
+	    		android:id="@+id/detect_face"
+	    		android:layout_height="wrap_content"
+	    		android:layout_weight="1"
+	    		android:text="识别特征"
+	    		android:background="@drawable/shape"
+	    		android:textStyle="bold"
+	    		android:layout_marginLeft="5sp"
+	    		android:layout_marginRight="10sp"
+	    		android:layout_marginTop="5sp"
+	    		android:layout_marginBottom="10sp"
+	    		/>
+                  
+             </TableRow>
+             <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" 
+                >
+                <Button 
+	    		android:id="@+id/generate_data"
+	    		android:layout_height="wrap_content"
+	    		android:text="生成数据"
+	    		android:layout_weight="1"
+	    		android:textStyle="bold"
+	    		android:background="@drawable/shape"
+	    		android:layout_marginLeft="10sp"
+	    		android:layout_marginRight="5sp"
+	    		android:layout_marginTop="5sp"
+	    		android:layout_marginBottom="10sp"
+	    		
+	    		/>
+      
+    
+    			<Button 
+	    		android:id="@+id/identify_face"
+	    		android:layout_height="wrap_content"
+	    		android:text="识别身份"
+	    		android:layout_weight="1"
+	    		android:textStyle="bold"
+	    		
+	    		android:layout_marginLeft="5sp"
+	    		android:layout_marginRight="10sp"
+	    		android:layout_marginTop="5sp"
+	    		android:layout_marginBottom="10sp"
+	    		android:background="@drawable/shape"
+	    		
+	    		/>
+                     
+             </TableRow>
+             
+    </TableLayout>
+        
+        
+    </RelativeLayout>
+    
+    
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/buttons"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="30sp"
+        android:background="@drawable/bg_border1"
+        android:padding="3dp"
+         />
+	
+</RelativeLayout>
+

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     >
+    
+     <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/blank"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="34dp"
+        android:gravity="center_horizontal"
+        android:text="添加课程"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+    
+    <TableLayout
+        android:id="@+id/blank"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="80sp"
+     	>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:text="课程编号"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/course_number"
+                android:layout_height="wrap_content"
+                android:hint="课程由编号唯一标识" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:text="课程名称"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/course_name"
+                android:layout_height="wrap_content" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:text="课程时间"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/course_time"
+                android:layout_height="wrap_content" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:text="课程地点"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/course_location"
+                android:layout_height="wrap_content" />
+        </TableRow>
+    </TableLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/blank" >
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <Button
+                    android:id="@+id/add_course_confirm"
+                    android:layout_height="wrap_content"
+                   
+                    android:layout_marginLeft="70sp"
+	    			android:layout_marginRight="70sp"
+	    			android:layout_marginTop="30sp"
+	    			android:layout_marginBottom="5sp"
+                	android:layout_weight="1"
+                    android:text="确认"
+                    android:textStyle="bold"
+                    android:background="@drawable/shape"
+                    
+                     />
+
+            </TableRow>
+        </TableLayout>
+    </RelativeLayout>
+
+   
+
+</RelativeLayout>
